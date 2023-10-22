@@ -8,7 +8,7 @@ interface TodoListProps {
 }
 export default function TodoList({ tasks }: TodoListProps) {
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto w-full">
       <table className="table">
         <thead>
           <tr>
