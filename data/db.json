@@ -1,0 +1,7 @@
+{
+  "tasks": [
+    { "id": 1, "data": "this is a test task" },
+    { "id": 2, "data": "this is a second test task" },
+    { "id": 3, "data": "this is a third test task" }
+  ]
+}
