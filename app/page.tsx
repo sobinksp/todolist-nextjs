@@ -9,8 +9,8 @@ export default async function Home() {
     <div className="max-w-6xl mx-auto text-center">
       <div className="flex flex-col gap-4 text-black p-5 items-center">
         <h1 className="text-2xl">Todo List</h1>
-        <AddTask />
         <TodoList tasks={tasks} />
+        <AddTask />
       </div>
     </div>
   );
