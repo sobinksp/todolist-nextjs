@@ -19,3 +19,15 @@ export async function addNewTask(task: ITask): Promise<ITask[]> {
   const newTask = await res.json();
   return newTask;
 }
+
+export async function editTask(task: ITask): Promise<ITask[]> {
+  const res = await fetch(`${jsonServerUrl}/tasks/${task.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(task),
+  });
+  const editedTask = await res.json();
+  return editedTask;
+}
