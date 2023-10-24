@@ -21,7 +21,7 @@ export default function AddTask() {
     const form = document.getElementById("taskForm");
     form?.dispatchEvent(new Event("submit"));
     await addNewTask({
-      id: uuidv4,
+      id: uuidv4(),
       data: newTask,
     });
     setNewTask("");
@@ -33,7 +33,7 @@ export default function AddTask() {
     <div>
       <button
         onClick={() => setModalState(true)}
-        className="btn btn-accent w-80 "
+        className="btn btn-accent w-80 flex "
       >
         <BiPlus size={19} /> Add New Task
       </button>
