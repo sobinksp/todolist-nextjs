@@ -31,3 +31,9 @@ export async function editTask(task: ITask): Promise<ITask[]> {
   const editedTask = await res.json();
   return editedTask;
 }
+
+export async function delTask(id: string): Promise<void> {
+  await fetch(`${jsonServerUrl}/tasks/${id}`, {
+    method: "DELETE",
+  });
+}
